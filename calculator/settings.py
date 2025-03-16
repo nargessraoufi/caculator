@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-0cl5^54czw&pky^d$q^t2vj+#n56vo-qf0!rq0g^f409^wl%v$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://sarra-ramezani.github.io/calculator-project','https://sarra-ramezani.github.io/calculator/']
+ALLOWED_HOSTS = ['https://sarra-ramezani.github.io/calculator-project',
+                 'https://sarra-ramezani.github.io/calculator/',
+                 'https://0xr-skillful-mendel.circumeo-apps.net/']
 
 
 # Application definition
