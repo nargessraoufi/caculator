@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0cl5^54czw&pky^d$q^t2vj+#n56vo-qf0!rq0g^f409^wl%v$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://sarra-ramezani.github.io/calculator-project','https://sarra-ramezani.github.io/calculator/']
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'database',
     'rest_framework',
-    'corsheaders',
+    # 'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,21 +49,21 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',  
 ]
 
     
 
-CORS_ALLOWED_METHODS = [
-    "GET",
-    "POST",
-    "OPTIONS",
-]
+# CORS_ALLOWED_METHODS = [
+#     "GET",
+#     "POST",
+#     "OPTIONS",
+# ]
 
-CORS_ALLOW_HEADERS = ["content-type",]
+# CORS_ALLOW_HEADERS = ["content-type",]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'calculator.urls'
 
